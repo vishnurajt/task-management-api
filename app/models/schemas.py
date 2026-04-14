@@ -2,6 +2,7 @@ from pydantic import BaseModel, EmailStr, ConfigDict
 from typing import Optional
 from datetime import datetime
 from app.models.db_models import PriorityEnum, StatusEnum
+from enum import Enum
 
 
 class UserCreate(BaseModel):
@@ -26,6 +27,14 @@ class Token(BaseModel):
 
 # --- TASK SCHEMAS ---
 
+class OrderEnum(str, Enum):
+    asc = "asc"
+    desc = "desc"
+
+class SortFieldEnum(str, Enum):
+    created_at = "created_at"
+    due_date = "due_date"
+    priority = "priority"
 
 class TaskCreate(BaseModel):
     title: str
