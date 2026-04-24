@@ -6,8 +6,6 @@ from app.database import engine
 from app.models import db_models
 from app.routers import auth, tasks
 
-# Create tables on startup
-db_models.Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Task Manager API", version="1.0.0")
 
