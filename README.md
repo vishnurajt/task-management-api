@@ -133,5 +133,5 @@ pytest tests/ -v
 
 ## Author
 
-Vishnuraj T — Python Backend Engineer
-GitHub: github.com/vishnurajt
+Vishnuraj T — Python Backend Engineer ```
+GitHub: github.com/vishnurajt```
