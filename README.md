@@ -37,6 +37,7 @@ API Docs: https://task-management-api-production-49fc.up.railway.app/docs
 | Deployment | Railway |
 
 ## Project Structure
+```
 Task_Manager/
 ├── app/
 │   ├── main.py           # App setup, middleware, routers
@@ -59,7 +60,7 @@ Task_Manager/
 ├── docker-compose.yml
 ├── railway.toml
 └── requirements.txt
-
+```
 ## API Endpoints
 
 ### Auth
